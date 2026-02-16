@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# model checkpoints
+**/checkpoints/*
+
+# data 
+data/*
+
+# .jpg, .png
+*.jpg
+*.png
+
+# ckpts
+*.tar
