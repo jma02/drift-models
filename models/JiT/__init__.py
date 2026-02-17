@@ -13,7 +13,9 @@ from .JiT import (
 
 from .JiT_uncond import (
     JiTUncond,
+    JiTUncond_XS_4,
     JiTUncond_XS_8,
+    JiTUncond_B_8,
     JiTUncond_B_16,
     JiTUncond_B_32,
     JiTUncond_L_16,
@@ -35,7 +37,9 @@ __all__ = [
     "JiT_H_32",
     "JiT_models",
     "JiTUncond",
+    "JiTUncond_XS_4",
     "JiTUncond_XS_8",
+    "JiTUncond_B_8",
     "JiTUncond_B_16",
     "JiTUncond_B_32", 
     "JiTUncond_L_16",

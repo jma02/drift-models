@@ -238,6 +238,11 @@ class JiTUncond(nn.Module):
 
         return output
 
+
+def JiTUncond_XS_4(**kwargs):
+    return JiTUncond(depth=8, hidden_size=256, num_heads=8,
+                     bottleneck_dim=128, in_context_len=32, in_context_start=2, patch_size=4, **kwargs)
+
 def JiTUncond_XS_8(**kwargs):
     return JiTUncond(depth=8, hidden_size=512, num_heads=8,
                      bottleneck_dim=128, in_context_len=32, in_context_start=2, patch_size=8, **kwargs)
@@ -272,6 +277,7 @@ def JiTUncond_H_32(**kwargs):
 
 
 JiTUncond_models = {
+    'JiTUncond-XS/4': JiTUncond_XS_4,
     'JiTUncond-XS/8': JiTUncond_XS_8,
     'JiTUncond-B/8': JiTUncond_B_8,
     'JiTUncond-B/16': JiTUncond_B_16,
